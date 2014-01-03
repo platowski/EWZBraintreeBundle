@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="ewz_braintree.factory" class="EWZ\Bundle\BraintreeBundle\Factory\BraintreeFactory">
+            <argument key="environment">%ewz_braintree.environment%</argument>
+            <argument key="merchant_id">%ewz_braintree.merchant_id%</argument>
+            <argument key="public_key">%ewz_braintree.public_key%</argument>
+            <argument key="private_key">%ewz_braintree.private_key%</argument>
+        </service>
+    </services>
+</container>

@@ -1,0 +1,23 @@
+{
+    "name": "excelwebzone/braintree-bundle",
+    "description": "This bundle integrate Braintree's PHP client library into Symfony",
+    "keywords": ["braintree", "bundle", "payment", "credit", "card"],
+    "homepage": "https://github.com/excelwebzone/EWZBraintreeBundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael H. Arieli",
+            "email": "excelwebzone@gmail.com",
+            "homepage": "http://excelwebzone.com/"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "2.*",
+        "braintree/braintree_php": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "EWZ\\Bundle\\BraintreeBundle": "" }
+    },
+    "target-dir": "EWZ/Bundle/BraintreeBundle"
+}
