@@ -24,6 +24,7 @@ class EWZBraintreeExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+        $loader->load('twig.xml');
 
         if (isset($config['environment'])) {
             $container->setParameter('ewz_braintree.environment', $config['environment']);
@@ -36,6 +37,9 @@ class EWZBraintreeExtension extends Extension
         }
         if (isset($config['private_key'])) {
             $container->setParameter('ewz_braintree.private_key', $config['private_key']);
+        }
+        if (isset($config['cse_key'])) {
+            $container->setParameter('ewz_braintree.cse_key', $config['cse_key']);
         }
     }
 }
