@@ -14,7 +14,7 @@
     ],
     "require": {
         "symfony/framework-bundle": "2.*",
-        "braintree/braintree_php": "dev-master"
+        "braintree/braintree_php": "2.25.0"
     },
     "autoload": {
         "psr-0": { "EWZ\\Bundle\\BraintreeBundle": "" }
