@@ -18,7 +18,7 @@ class GlobalVariablesCompilerPass implements CompilerPassInterface
     {
         $container
             ->getDefinition('twig')
-            ->addMethodCall('addGlobal', array('ewz_braintree', , new Reference('ewz_braintree.twig.global')))
+            ->addMethodCall('addGlobal', array('ewz_braintree', new Reference('ewz_braintree.twig.global')))
         ;
     }
 }
