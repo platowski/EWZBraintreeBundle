@@ -42,6 +42,7 @@ class Configuration implements ConfigurationInterface
                     ->info('your Braintree private key')
                 ->end()
                 ->scalarNode('cse_key')
+                    ->defaultNull()
                     ->info('your Braintree client-side encryption key')
                 ->end()
             ->end()
